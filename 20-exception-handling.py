@@ -1,6 +1,6 @@
 def api_function():
-    raise Exception('Manually raising an exception')
-    return 100 / 10
+    country = 'India'
+    return country[100]
 
 
 try:
@@ -11,6 +11,8 @@ except ZeroDivisionError as zde:
     print(f'Zero Division Exception handled: {zde}')
 except ValueError as ve:
     print(f'Value Error handled: {ve}')
+except IndexError as ie:
+    print(f'Index Error handled: {ie}')
 except Exception as e:
     print(f'Exception: {e}')
 finally:
